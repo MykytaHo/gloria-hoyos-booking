@@ -94,8 +94,10 @@
     <form action="https://formsubmit.co/nikitagorbenkouan@gmail.com" method="POST">
       <input type="text" name="nombre" placeholder="Tu nombre" required data-es="Tu nombre" data-en="Your name" />
       <input type="tel" name="telefono" placeholder="Teléfono" required data-es="Teléfono" data-en="Phone number" />
-      <input type="date" name="fecha" required min="" onfocus="this.showPicker && this.showPicker()" />
-      <input type="time" name="hora" required onfocus="this.showPicker && this.showPicker()" />
+      <label for="fecha" data-es="Selecciona la fecha" data-en="Select a date">Selecciona la fecha</label>
+      <input type="date" id="fecha" name="fecha" required min="" onfocus="this.showPicker && this.showPicker()" />            
+      <label for="hora" data-es="Selecciona la hora" data-en="Select a time">Selecciona la hora</label>
+      <input type="time" id="hora" name="hora" required onfocus="this.showPicker && this.showPicker()" />
       <select name="personas" required data-placeholder-es="Número de personas" data-placeholder-en="Number of guests">
         <option value="" selected>Número de personas</option>
         <option value="1">1</option>
